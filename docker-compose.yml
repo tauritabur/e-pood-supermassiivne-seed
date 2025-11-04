@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:17
+    container_name: e_pood_postgres
+    environment:
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: salasona
+      POSTGRES_DB: e_pood
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    restart: unless-stopped
