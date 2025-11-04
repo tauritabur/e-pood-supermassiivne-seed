@@ -1,0 +1,12 @@
+{
+  "name": "e-pood-supermassiivne-seed",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "seed": "bun run seed.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.0",
+    "pg": "^8.11.1"
+  }
+}
